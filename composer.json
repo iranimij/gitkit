@@ -1,7 +1,4 @@
 {
-  "require-dev": {
-    "wp-cli/wp-cli-bundle": "^2.4"
-  },
   "require": {
     "iranimij/wp-options-manager": "^1.0"
   }
