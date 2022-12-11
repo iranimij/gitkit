@@ -8,7 +8,7 @@ node_modules/
 dist/
 release/
 packages/
-vendor/wp-cli
+vendor/wp-cli/
 
 # Compiled Java class files
 *.class
