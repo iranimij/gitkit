@@ -68,12 +68,12 @@ function releaseZip() {
 	return src( [
 		'release/**',
 	] )
-		.pipe( zip( 'aiu.zip' ) )
+		.pipe( zip( 'gitkit.zip' ) )
 		// eslint-disable-next-line no-undef
 		.pipe( dest( __dirname ).on( 'end', () => {
-			// Move files from release/aiu to release/
-			src( 'release/aiu/**' )
-				.pipe( dest( 'release' ).on( 'end', () => del( 'release/aiu' ) ) );
+			// Move files from release/gitkit to release/
+			src( 'release/gitkit/**' )
+				.pipe( dest( 'release' ).on( 'end', () => del( 'release/gitkit' ) ) );
 		} ) );
 }
 
@@ -82,16 +82,17 @@ function release() {
 		'**',
 		'!src/**',
 		'!assets/src/**',
+		'!includes/admin/src/**',
 		'!README.md',
 		'!cypress/**',
 		'!build/**',
 		'!node_modules/**',
 		'!visual-diff/**',
-		'!vendor/**',
+		'!vendor/wp-cli',
 		'!wpcs/**',
 		'!*.{lock,json,xml,js,yml}',
 	] )
-		.pipe( dest( 'release/aiu', { mode: '0755' } ) );
+		.pipe( dest( 'release/gitkit', { mode: '0755' } ) );
 }
 
 /*
