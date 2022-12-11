@@ -9,7 +9,7 @@
     "dev": "cross-env NODE_ENV=development webpack --watch --mode development",
     "lint:js": "eslint assets/src/js",
     "format:js": "eslint --fix src assets/src/js",
-    "make:pot": "wp i18n make-pot . --allow-root --domain=automatic-image-uploader --skip-audit --exclude=\"build,docs,src,node_modules,vendor\" --headers='{\"Last-Translator\":\"Automatic image uploader <iranimij@gmail.com>\",\"Language-Team\":\"Iman Heydari <iranimij@gmail.com>\"}' --file-comment=\"Copyright (c) $(date +'%Y') Automatic Image Uploader.\" languages/automatic-image-uploader.pot",
+    "make:pot": "wp i18n make-pot . --allow-root --domain=gitkit --skip-audit --exclude=\"build,docs,src,node_modules,vendor\" --headers='{\"Last-Translator\":\"GitKit <iranimij@gmail.com>\",\"Language-Team\":\"Iman Heydari <iranimij@gmail.com>\"}' --file-comment=\"Copyright (c) $(date +'%Y') GitKit.\" languages/gitkit.pot",
     "make:json": "wp i18n make-json languages --no-purge"
   },
   "devDependencies": {
