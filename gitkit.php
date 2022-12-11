@@ -8,7 +8,7 @@
  * @wordpress-plugin
  * Plugin Name:       GitKit
  * Plugin URI:        http://www.iranimij.com
- * Description:       Upload or update your plugins with different version controls provider like Github.
+ * Description:       Upload your plugins Github.
  * Version:           1.0.0
  * Author:            Iman Heydari
  * License:           GPL-2.0+
