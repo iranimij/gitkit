@@ -13,12 +13,9 @@
  * Author:            Iman Heydari
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Author URI:        http://www.iranimij.com
  * Text Domain:       gitkit
  * Domain Path:       /languages
  */
-
-use Gitkit\Downloader;
 
 defined( 'ABSPATH' ) || die();
 
@@ -105,8 +102,6 @@ if ( ! class_exists( 'Gitkit' ) ) {
 		 * @var string
 		 */
 		public static $plugin_assets_url;
-
-		public $downloader;
 
 		/**
 		 * Get a class instance.
