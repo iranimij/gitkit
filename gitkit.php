@@ -129,16 +129,7 @@ if ( ! class_exists( 'Gitkit' ) ) {
 		 * @since NEXT
 		 */
 		public function __construct() {
-//            var_dump(get_option('iman'));die();
 			$this->define_constants();
-
-			$this->load_files( [
-				'lib/wp-async-request',
-				'lib/wp-background-process',
-				'downloader',
-			] );
-
-			$this->downloader = new Downloader();
 
 			add_action( 'init', [ $this, 'init' ] );
 			add_action( 'admin_init', [ $this, 'admin_init' ] );
