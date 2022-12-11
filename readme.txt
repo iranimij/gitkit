@@ -1,4 +1,4 @@
-=== Automatic Image Uploader ===
+=== GitKit ===
 Contributors: iranimij
 Donate link: https://iranimij.com/
 Tags: git updater, github, github updater, update by git
