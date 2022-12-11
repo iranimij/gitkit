@@ -1,0 +1,46 @@
+input[type="color"], input[type="date"], input[type="datetime-local"], input[type="datetime"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], select, textarea {
+  border: none;
+  box-shadow: none;
+  padding: 5px !important;
+
+  &:hover {
+    border: none;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.gitkit-github-access-token {
+  width: 500px;
+}
+
+
+#gitkit-upload-plugin {
+  margin-top: 10px;
+}
+
+.gitkit-plugin-uploader-wrapper {
+  width: 100%;
+  min-height: 100px;
+  background: #fff;
+
+  .gitkit-plugin-uploader-box-wrapper {
+    & > div {
+      padding: 10px;
+    }
+  }
+}
+
+.MuiTextField-root {
+  label {
+    font-size: 12px;
+    line-height: 1;
+  }
+
+  legend span {
+    font-size: 8px;
+  }
+
+}

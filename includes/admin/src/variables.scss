@@ -1,0 +1,19 @@
+// Override default Bootstrap variables or define custom variables here.
+
+// Tables
+//
+// Customizes the `.table` component with basic values, each used across all table variations.
+
+$table-border-color: #dfdfdf;
+$table-hover-bg: #fafafa;
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+
+$dropdown-min-width: auto;
+$dropdown-border-radius: 0;
+$dropdown-border-width:  1;
+
+$dropdown-item-padding-y: .4rem;
+$dropdown-item-padding-x: 1.2rem;

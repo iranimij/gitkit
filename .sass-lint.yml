@@ -1,0 +1,13 @@
+# Linter Options
+options:
+  # Don't merge default rules
+  merge-default-rules: false
+# File Options
+files:
+  include: 'assets/src/scss/**/*.s+(a|c)ss'
+
+# Rule Configuration
+rules:
+  property-sort-order:
+    - 2
+    - order: smacss

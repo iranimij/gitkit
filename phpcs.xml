@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<ruleset name="SellKit">
+	<description>SellKit PHPCS Ruleset</description>
+
+	<config name="installed_paths" value="wpcs" />
+
+	<exclude-pattern>vendor/</exclude-pattern>
+	<exclude-pattern>vendors/</exclude-pattern>
+	<exclude-pattern>build/</exclude-pattern>
+	<exclude-pattern>node_modules/</exclude-pattern>
+	<exclude-pattern>wpcs/</exclude-pattern>
+	<exclude-pattern>index.php</exclude-pattern>
+	<exclude-pattern>includes/contact-segmentation/libraries</exclude-pattern>
+
+	<rule ref="WordPress">
+		<exclude name="PEAR.NamingConventions.ValidClassName.StartWithCapital"/>
+		<exclude name="PEAR.Functions.FunctionCallSignature.MultipleArguments"/>
+		<exclude name="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket"/>
+		<exclude name="PEAR.Functions.FunctionCallSignature.CloseBracketLine"/>
+		<exclude name="WordPress.PHP.NoSilencedErrors.Discouraged" />
+		<exclude name="WordPress.NamingConventions.ValidHookName.UseUnderscores" />
+		<exclude name="WordPress.XSS.EscapeOutput.OutputNotEscaped" />
+		<exclude name="WordPress.Files.FileName.InvalidClassFileName" />
+		<exclude name="WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned" />
+		<exclude name="WordPress.VIP.SlowDBQuery.slow_db_query_tax_query" />
+		<exclude name="PSR2.Methods.MethodDeclaration.Underscore" />
+		<exclude name="Generic.WhiteSpace.ScopeIndent.IncorrectExact" />
+		<exclude name="Squiz.PHP.EmbeddedPhp.ContentAfterOpen" />
+		<exclude name="Squiz.PHP.EmbeddedPhp.ContentBeforeEnd" />
+		<exclude name="PSR2.Classes.PropertyDeclaration.Underscore" />
+		<exclude name="Squiz.Commenting.PostStatementComment.Found" />
+		<exclude name="Squiz.Commenting.LongConditionClosingComment.Missing" />
+		<exclude name="Squiz.Commenting.FileComment.Missing" />
+		<exclude name="WordPress.VIP.RestrictedFunctions.wp_remote_get_wp_remote_get" />
+		<exclude name="WordPress.DateTime.RestrictedFunctions.date_date" />
+		<!-- For now -->
+		<exclude name="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket" />
+		<exclude name="PEAR.Functions.FunctionCallSignature.CloseBracketLine" />
+		<exclude name="PEAR.Functions.FunctionCallSignature.MultipleArguments" />
+		<exclude name="WordPress.Security.EscapeOutput.OutputNotEscaped" />
+		<exclude name="WordPress.DB.SlowDBQuery.slow_db_query_tax_query" />
+		<exclude name="Generic.Arrays.DisallowShortArraySyntax.Found" />
+	</rule>
+
+	<rule ref="Squiz.Commenting">
+		<exclude-pattern>includes/dynamic-keywords/keywords/*.php</exclude-pattern>
+		<exclude-pattern>includes/elementor/modules/*/module.php</exclude-pattern>
+		<exclude-pattern>includes/elementor/modules/*/widgets/*.php</exclude-pattern>
+	</rule>
+
+	<rule ref="Generic.Commenting.DocComment.MissingShort">
+		<exclude-pattern>includes/dynamic-keywords/keywords/*.php</exclude-pattern>
+		<exclude-pattern>includes/elementor/modules/*/module.php</exclude-pattern>
+		<exclude-pattern>includes/elementor/modules/*/widgets/*.php</exclude-pattern>
+	</rule>
+</ruleset>
