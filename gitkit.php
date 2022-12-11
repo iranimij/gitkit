@@ -14,7 +14,7 @@
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Author URI:        http://www.iranimij.com
- * Text Domain:       automatic-image-uploader
+ * Text Domain:       gitkit
  * Domain Path:       /languages
  */
 
